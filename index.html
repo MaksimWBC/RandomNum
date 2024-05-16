@@ -7,17 +7,27 @@
     <title>Генератор случайны чисел</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <div class="num_container">
             <h3>Случайное число</h3>
             <p class="num" id="num">0</p>
         </div>
+        <div class="check_box">
+            <span>В диапазоне: </span>
+            <input type="radio" id="check1" class="check_item" name="parameter" checked="checked">
+        </div>
         <div class="form_container">
-                <label for="number1">От</label>
-                <input class="input" type="number" id="number1" min="0">
-
-                <label for="number2">До</label>
-                <input class="input" type="number" id="number2" min="0">
+            <label for="number1">От</label>
+            <input class="input" type="number" id="number1" min="0">
+            <label for="number2">До</label>
+            <input class="input" type="number" id="number2" min="0">
+        </div>
+        <div class="check_box">
+            <span>Из нескольких: </span>
+            <input type="radio" id="check2" class="check_item" name="parameter">
+        </div>
+        <div class="array_container">
+            <input type="text" id="text_array">
         </div>
         <div class="button_container">
             <button class="btn" id="btn">Сгенерировать</button>
